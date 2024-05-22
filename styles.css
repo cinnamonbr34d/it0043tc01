@@ -1,4 +1,4 @@
-body {
+body{
     background-image: url("https://t4.ftcdn.net/jpg/06/24/18/05/360_F_624180561_ddrniyb4RULIagEwySdxSK7ZMsTZnDb8.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,14 +10,14 @@ body {
     margin: 0;
 }
 
-.container {
+.container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px; 
 }
 
-.card {
+.card{
     width: 300px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -31,27 +31,27 @@ body {
     text-align: center;
 }
 
-.card-image {
-    position: relative;
+.card-image{
+    position: normal;
     width: 100%;
     height: 200px;
     background-color: #f0f0f0;
     overflow: hidden;
 }
 
-.card-image img {
-    position: relative;
+.card-image img{
+    position: normal;
     z-index: 1;
     width: 100%;
     height: auto;
 }
 
-.pokemon-name {
+.pokemon-name{
     font-size: 24px;
     margin: 10px 0;
 }
 
-.pokemon-type {
+.pokemon-type{
     padding: 10px 10px;
     border-radius: 20px;
     color: #fff;
@@ -59,44 +59,44 @@ body {
     display: inline-block;
 }
 
-.fairy {
+.fairy{
     background-color: #EE99AC;
 }
 
-.ground {
+.ground{
     background-color: #E2BF65;
 }
 
-.electric {
+.electric{
     background-color: #F7D02C;
 }
 
-.normal {
+.normal{
     background-color: #A8A77A;
 }
 
-.water {
+.water{
     background-color: #6390F0;
 }
 
-.fire {
+.fire{
     background-color: #EE8130;
 }
 
-.pokemon-description {
+.pokemon-description{
     padding: 0 15px;
     margin-bottom: 15px;
     font-size: 14px;
 }
 
-.buttons {
+.buttons{
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
 }
 
-.btn {
+.btn{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
