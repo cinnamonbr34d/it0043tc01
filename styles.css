@@ -14,6 +14,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px; 
+    margin-top: 20px; /* Added margin-top for spacing */
 }
 .card{
     width: 350px;
@@ -53,30 +54,40 @@ body{
     font-size: 24px;
     margin: 10px 0;
 }
-.pokemon-type {
-    padding: 10px 10px;
-    border-radius: 20px;
-    color: #fff;
+.detail-label{
+    font-weight: bold;
+}
+.pokemon-details{
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    display: inline-block;
+}
+.pokemon-type{
+    display: flex;
+}
+.type-bubble{
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #fff;
+    margin-right:10px;
 }
 .fairy{
-    background-color: #ec8fa3;
+    background-color: #f75db2;
 }
 .ground{
-    background-color: #7b6b43;
+    background-color: #8d7d56;
 }
 .grass{
     background-color: #4da850;
 }
 .normal{
-    background-color: #A8A77A;
+    background-color: #97978c;
 }
 .water{
-    background-color: #6390F0;
+    background-color: #4aaeff;
 }
 .fire{
-    background-color: #ee5030;
+    background-color: #ff522f;
 }
 .pokemon-description{
     padding: 0 15px;
@@ -97,11 +108,11 @@ body{
     transition: background-color 0.5s;
 }
 .btn.add-pokemon{
-    background-color: #FFB135;
+    background-color: #ff7235;
 }
 .btn.release-pokemon{
-    background-color: #3DCB94;
+    background-color: #13813b;
 }
 .btn:hover.add-pokemon{
-    background-color: #e09c2c;
+    background-color: #e7b8aa;
 }
