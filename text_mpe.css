@@ -6,12 +6,10 @@ body{
     color: white;
     text-shadow: 1px 1px 2px #000000;
     font-size: x-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
-}
-.grid-container{
+  }
+  
+  .grid-container{
     width: 90vw;
     padding: 20px;
     margin: 20px auto;
@@ -22,140 +20,217 @@ body{
     background-size: cover;
     background-position: center;
     justify-content: space-around;
-}
-.grid-item{
+  }
+  
+  .grid-item{
     flex: 1 1 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     padding: 10px;
-}
-.grid-item img{
+  }
+  
+  .grid-item img{
     max-width: 75%;
     max-height: 100%;
     object-fit: cover;
-}
-.grid-item span{
+  }
+  
+  .grid-item span{
     display: none;
     margin-left: 10px;
     font-family: sans-serif;
-}
-.grid-item .pokeball{
-    width: 35px;  
-    height: 35px; 
+  }
+  
+  .grid-item .pokeball{
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
-}
-.grid-item .type{
+  }
+  
+  .grid-item .type{
     display: none;
-}
-@media (min-width: 769px){
+  }
+  
+  @media (min-width: 769px){
     .grid-item .pokeball {
-        display: none;
+      display: none;
     }
-}
-@media (max-width: 768px){
-    .grid-container{
-        flex-direction: column;
-        height: auto;
+  }
+  
+  @media (max-width: 768px){
+    .grid-container {
+      flex-direction: column;
+      height: auto;
     }
     .grid-item{
-        flex: 1 1 auto;
-        justify-content: flex-start;
-        padding: 10px;
-        text-align: center;
-        position: relative; 
-        transition: background-image 0.3s ease;
-        background-size: contain;
+      flex: 1 1 auto;
+      justify-content: flex-start;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      transition: background-image 0.3s ease;
+      background-size: contain;
     }
     .grid-item:hover{
-        background-image: url('pokeball.jpg'); 
-        background-size: cover;
-        background-position: center;
+      background-image: url('pokeball.jpg');
+      background-size: cover;
+      background-position: center;
     }
     .grid-item img{
-        max-width: 50px;
-        max-height: 50px;
+      max-width: 50px;
+      max-height: 50px;
     }
     .grid-item span{
-        display: inline;  
-        flex: 1;
-        text-align: center;
+      display: inline;
+      flex: 1;
+      text-align: center;
     }
     .grid-item .pokeball{
-        width: 35px;  
-        height: 35px; 
-        margin-left: 10px;
+      width: 35px;
+      height: 35px;
+      margin-left: 10px;
     }
-}
-@media (max-width: 480px){
+  }
+  
+  @media (max-width: 480px){
     .grid-item{
-        flex-basis: 45%;
-        position: relative; 
-        transition: background-image 0.3s ease;
+      flex-basis: 45%;
+      position: relative;
+      transition: background-image 0.3s ease;
     }
     .grid-item:hover{
-        background-image: url('hover4.gif'); 
-        background-size: cover;
-        background-position: center;
+      background-image: url('pokeball.jpg');
+      background-size: cover;
+      background-position: center;
     }
     .grid-item .pokeball{
-        width: 35px;  
-        height: px; 
+      width: 35px;
+      height: px;
     }
-}
-.bg-caterpie {background-color: #53fa41;}
-.bg-pikachu {background-color: #FFEB3B;}
-.bg-pidgey {background-color: #ba9c6e;}
-.bg-jigglypuff {background-color: #F8BBD0;}
-.bg-abra {background-color: #f1a203;}
-.bg-meowth {background-color: #e2bd79;}
-.bg-bullbasaur {background-color: #4CAF50;}
-.bg-charmander {background-color: #FF5722;}
-.bg-mew {background-color: #efb497;}
-.bg-dratini {background-color: #1e5ad1;}
-.bg-zubat {background-color: #196bc2}
-.bg-eevee {background-color: #cc874f;}
-
-.bug-type{ background-color: #8A9A5B; }
-.electric-type{ background-color: #FFBF00; }
-.grass-type{ background-color: #78C850; }
-.fairy-type{ background-color: #FF77FF; }
-.fire-type{ background-color: #ff0000; }
-.normal-type{ background-color:#A9A9A9; }
-.psychic-type{ background-color: pink; }
-.flying-type{ background-color: #81b8ee; }
-.poison-type{ background-color: #A040A0; }
-.dragon-type{background-color: #007bff }
-.water-type{ background-color: #007bff; }
-@media(max-width: 370px){
-    .grid-item img{
-        max-width: 100px;
-        max-height: 100px;
+  }
+  
+  .bg-caterpie{
+    background-color: #53fa41;
+  }
+  
+  .bg-pikachu{
+    background-color: #FFEB3B;
+  }
+  
+  .bg-pidgey{
+    background-color: #ba9c6e;
+  }
+  
+  .bg-jigglypuff{
+    background-color: #F8BBD0;
+  }
+  
+  .bg-abra{
+    background-color: #f1a203;
+  }
+  
+  .bg-meowth{
+    background-color: #e2bd79;
+  }
+  
+  .bg-bullbasaur{
+    background-color: #4CAF50;
+  }
+  
+  .bg-charmander{
+    background-color: #FF5722;
+  }
+  
+  .bg-mew{
+    background-color: #efb497;
+  }
+  
+  .bg-dratini{
+    background-color: #1e5ad1;
+  }
+  
+  .bg-zubat{
+    background-color: #196bc2;
+  }
+  
+  .bg-eevee{
+    background-color: #cc874f;
+  }
+  
+  .bug-type{
+    background-color: #8A9A5B;
+  }
+  
+  .electric-type{
+    background-color: #FFBF00;
+  }
+  
+  .grass-type{
+    background-color: #78C850;
+  }
+  
+  .fairy-type{
+    background-color: #FF77FF;
+  }
+  
+  .fire-type{
+    background-color: #ff0000;
+  }
+  
+  .normal-type{
+    background-color: #A9A9A9;
+  }
+  
+  .psychic-type{
+    background-color: pink;
+  }
+  
+  .flying-type{
+    background-color: #81b8ee;
+  }
+  
+  .poison-type{
+    background-color: #A040A0;
+  }
+  
+  .dragon-type{
+    background-color: #007bff;
+  }
+  
+  .water-type{
+    background-color: #007bff;
+  }
+  
+  @media (max-width: 370px){
+    .grid-item img {
+      max-width: 100px;
+      max-height: 100px;
     }
     .grid-item{
-        flex-direction: column;
-        padding: 20px;
+      flex-direction: column;
+      padding: 20px;
     }
     .grid-item .pokeball{
-        display: none;
+      display: none;
     }
     .grid-item span{
-        display: block;
-        margin: 10px 0 0 0;
-        text-align: center;
+      display: block;
+      margin: 10px 0 0 0;
+      text-align: center;
     }
     .grid-item .type{
-        display: block;
-        margin-top: 5px;
-        font-size: medium;
-        text-shadow: 1px 1px 1px #000000;
-        color: white;
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 1);
-        width: 70px; 
-        text-align: center; 
-        padding: 5px 50px;
-        border-radius: 10px;
-        margin: 1.5 2px;
+      display: block;
+      margin-top: 5px;
+      font-size: medium;
+      text-shadow: 1px 1px 1px #000000;
+      color: white;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 1);
+      width: 70px;
+      text-align: center;
+      padding: 5px 50px;
+      border-radius: 10px;
+      margin: 1.5 2px;
     }
-}
+  }
