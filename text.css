@@ -1,0 +1,36 @@
+body{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://mrwallpaper.com/wallpapers/simple-pokemon-pokeball-q00aeawbjb81adfs.jpg");
+    background-size: cover;
+    font-family: Arial;
+}
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+.pokemon-container{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.pokemon-container img{
+    max-width: 50%;
+    max-height: 50%;
+}
+.pokemon-container:hover{
+    transform: scale(3.1);
+}
+.background{
+background-image: url("https://mrwallpaper.com/images/high/basic-pokeball-cover-mcs4xg2ash4hj4e9.webp.png");  
+}
