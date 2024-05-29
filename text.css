@@ -110,7 +110,7 @@ body{
     }
 
     .grid-item:hover{
-        background-image: url('hover4.gif'); 
+        background-image: url('hover.gif'); 
         background-size: cover;
         background-position: center;
     }
@@ -178,4 +178,4 @@ body{
 .fairy-type{ background-color: #FF77FF; }
 .flying-type{ background-color: #81b8ee; }
 .bug-type{ background-color: #8A9A5B; }
-.dragon-type{background-color: #0f3df5bbff }
+.dragon-type{background-color: #007bff }
