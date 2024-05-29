@@ -1,56 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    <title>Pokemon Universe</title>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Grid</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main-container">
-        <div class="pokemon-container" style="background-color: #D1A36A;">
-            <img src="  https://cdn-icons-png.flaticon.com/512/188/188997.png " alt="Meowth">
-        </div>
-        <div class="pokemon-container" style="background-color: #FF69B9;">
-            <img src="   https://cdn-icons-png.flaticon.com/512/188/188993.png " alt="Jigglypuff">
-        </div>
-        <div class="pokemon-container" style="background-color: #8498E2;">
-            <img src="https://cdn-icons-png.flaticon.com/512/188/188999.png" alt="Zubat">
-        </div>
-        <div class="pokemon-container" style="background-color: #DFC72B;">
-            <img src="https://cdn-icons-png.flaticon.com/512/188/188987.png" alt="Pikachu">
-        </div>
-        <div class="pokemon-container" style="background-color: #4096A7;">
-        <img src="https://cdn-icons-png.flaticon.com/512/189/189001.png" alt="Snorlax"></div>
-        </div>
-                      
-        <div class="pokemon-container" style="background-color: #d8c65f">
-            <img src="https://cdn-icons-png.flaticon.com/512/188/188992.png " alt="Pidgey"></div>
-            </div>  
-
-         <div class="pokemon-container" style="background-color: #ECFF42;">
-            <img src="   https://cdn-icons-png.flaticon.com/512/188/188998.png " alt="Bellsprout"></div>
-            </div>
-
-        <div class="pokemon-container" style="background-color: #FFAFAB">
-            <img src="https://cdn-icons-png.flaticon.com/512/189/189006.png" alt="Mew"></div>
-            </div>
-
-        <div class="pokemon-container" style="background-color: #9826bb">
-            <img src="https://cdn-icons-png.flaticon.com/512/189/189003.png" alt="Venonat"></div>
-            </div> 
-
-        <div class="pokemon-container" style="background-color: #ff9100">
-                <img src="https://cdn-icons-png.flaticon.com/512/188/188990.png" alt="Charmander"></div>
-                </div> 
-                    
-        <div class="pokemon-container" style="background-color: #b4864a">
-                <img src="https://cdn-icons-png.flaticon.com/512/189/189003.png" alt="Eevee"></div>
-                </div> 
-
-        <div class="pokemon-container" style="background-color: #53da70">
-                <img src="https://cdn.icon-icons.com/icons2/851/PNG/512/bulbasaur_icon-icons.com_67580.png" alt="Bullbasaur"></div>
-                </div> 
-                
+<div class="grid-container">
+  <div class="grid-item bg-pikachu">
+    <img src="pikachu.png" alt="Pikachu">
+    <span>Pikachu</span>
+    <span class="type electric-type">Electric</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-pidgey">
+    <img src="pidgey.png" alt="Pidgey">
+    <span>Pidgey</span>
+    <span class="type normal-type">Normal</span><span class="type flying-type">Flying</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-caterpie">
+    <img src="caterpie.png" alt="Caterpie">
+    <span>Caterpie</span>
+    <span class="type poison-type">Bug</span><span class="type flying-type">Flying</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-zubat">
+    <img src="zubat.png" alt="Zubat">
+    <span>Zubat</span>
+    <span class="type flying-type">Flying</span><span class="type poison-type">Poison</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-eevee">
+    <img src="eevee.png" alt="Eevee">
+    <span>Eevee</span>
+    <span class="type normal-type">Normal</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+    </div>
+  <div class="grid-item bg-bullbasaur">
+    <img src="bullbasaur.png" alt="Bulbasaur">
+    <span>Bulbasaur</span>
+    <span class="type grass-type">Grass</span><span class="type poison-type">Poison</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-abra">
+    <img src="abra.png" alt="Abra">
+    <span>Abra</span>
+    <span class="type psychic-type">Bug</span><span class="type poison-type">Psychic</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-meowth">
+    <img src="meowth.png" alt="Meowth">
+    <span>Meowth</span>
+    <span class="type normal-type">Normal</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-charmander">
+    <img src="charmander.png" alt="Charmander">
+    <span>Charmander</span>
+    <span class="type fire-type">Fire</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-jigglypuff">
+    <img src="jigglypuff.png" alt="Jigglypuff">
+    <span>Jigglypuff</span>
+    <span class="type normal-type">Normal</span><span class="type fairy-type">Fairy</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div> 
+  <div class="grid-item bg-mew">
+    <img src="mew.png" alt="Mew">
+    <span>Snorlax</span>
+    <span class="type psychic-type">Psychic</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+  <div class="grid-item bg-dratini">
+    <img src="dratini.png" alt="Dratini">
+    <span>Dratini</span>
+    <span class="type dragon-type">Dragon</span>
+    <img class="pokeball" src="pokeball.png" alt="Pokeball">
+  </div>
+</div>
 </body>
 </html>
