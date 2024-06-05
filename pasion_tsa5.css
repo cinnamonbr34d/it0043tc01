@@ -1,183 +1,199 @@
 *{
-padding: 0;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: verdana, sans-serif;
+    transition: 0.4s all ease;
 }
-
-/*body{
-    background-image: url(tsa5_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;/*/
-
+    
 .TTG-container{
     width: 85vw;
-    border: 10px;
-    display: grid;
-    margin: 15px auto;
-    padding: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-}
-
-.item{
-    border: 3px solid black;
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 10px;
-    color: black;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 45px;
-}
-
-.details{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.power{
-    font-size: 1rem;
-}
-
-.name{
-    font-size: 2.5rem;
-    font-weight: 800;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 img{
-    width: 128px;
+    width: 130px;
 }
 
-.desc{
-    text-align: center;
-    line-height: 1.5;
+body {
+    background: url(ttgbg.jpg) center/cover no-repeat;
 }
 
-#robin.details{
-    flex-direction: row;
-}
-
-#robin{
-    background-color: #DF5968;
-    color: #000000;
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-#starfire{
-    background-color: #F48DC4;
-    color: #0f0307;
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-#raven{
-    background-color: #966FCB;
-    color: #000000;
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-#beastboy{
-    background-color: #70AF75;
-    color: #000000;
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
-
-#cyborg{
-    background-color: #6DC0FF;
-    color: #000000;
-    grid-column: 4/5;
-    grid-row: 1/3;
-}
-
+.item{
+    border: 5px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    }
+    
 #robin .details,
 #beastboy .details{
-    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+    
+.name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+    
+.power-robin{ 
+    border: 2px solid #fe8583;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
 }
 
-@media(max-width:1200px){
-    .TTG-container{
-        grid-template-columns: repeat(2, 1fr);
+.power-starfire{
+    border: 2px solid #ffa1d5;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
     }
+.power-raven{
+    border: 2px solid #e5a3ff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    }
+.power-beastboy{
+    border: 2px solid #a7ffc1;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+.power-cyborg{
+    border: 2px solid #a7e7ff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+.details{
+    text-align: center;
+}
+    
+.desc{
+    text-align: justify;
+    line-height: 1.5;
+}
     
     #robin{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    #starfire{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    #raven{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    
-    #beastboy{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    #cyborg{
+        background-color:#DF5968;
         grid-column: 1/3;
-        grid-row: 3/4;
-    }
-
-    #cyborg .details{
-        flex-direction: row;
-    }
-
-    #robin .details,
-    #beastboy .details{
-        flex-direction: column;
-    }
-}
-
-@media(max-width: 700px){
-    .TTG-container{
-        grid-template-columns: 1fr;
-    }
-   
-    #robin{
-        grid-column: 1/2;
         grid-row: 1/2;
     }
     
+    #raven{
+        background-color:#966FCB;
+    }
+    
     #starfire{
-        grid-column: 1/2;
+        background-color: #F48DC4;
+        color:
+    }
+    
+    #beastboy{
+        background-color: #70AF75;
+        grid-column: 2/4;
         grid-row: 2/3;
     }
     
-    #raven{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    #beastboy{
-        grid-column: 1/2;
-        grid-row: 4/5;
+    #cyborg{
+        background-color: #6DC0FF;
+        grid-column: 4/5;
+        grid-row: 1/3;
     }
     
-    #cyborg{
-        grid-column: 1/2;
-        grid-row: 5/6;
+    @media(max-width:1000px){
+        .TTG-container{
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+        }
+    
+        #robin{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    
+        #raven{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+    
+        #beastboy{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+    
+        #starfire{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+    
+        #cyborg{
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+    
+        #robin .details,
+        #beastboy .details{
+            display:block
+        }
+    
+        #cyborg .details{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+    
     }
-
-    #robin .details,
-    #starfire .details,
-    #raven .details
-    #beastboy .details,
-    #cyborg .details,
-    {
-        flex-direction: row;
+    @media (max-width:770px){
+        .TTG-container{
+            grid-template-columns: 1fr;
+        }
+    
+        #robin{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    
+        #raven{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    
+        #beastboy{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    
+        #starfire{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+    
+        #cyborg{
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+    
+        #robin .details,
+        #beastboy .details{
+            display: flex;
+        }
+        
+        .details{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
     }
-}
