@@ -1,0 +1,64 @@
+.grid-container {
+    height: 85vw;
+    width: 20vw;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    }
+    
+    .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 2px 3px 4px grey;
+    border-radius: 10px;
+    font-size: 9em;
+    font-style:italic;
+    padding: 50px;
+    }
+    
+    .recharge {
+
+    }
+    #repeater{
+    background-color: #C7E879;
+    grid-column: 1/span2;
+    grid-row: 1;
+    }
+    
+    #hypnoshroom{
+    background-color: #DC97EE;
+    grid-column: 3/span 1;
+    grid-row: 1;
+    }
+    
+    #cherrybomb{
+    background-color: #DB5769;
+    grid-column: 4/span 1;
+    grid-row: 1;
+    }
+    
+    #walnut{
+    background-color: #CDBA72;
+    grid-column: 2/span 2;
+    grid-row: 2;
+    }
+    
+    #cattail{
+    background-color: #E5B4C8;
+    grid-column: 4;
+    grid-row: 1/span 2;
+    }
+    
+    .img{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+    }
+
