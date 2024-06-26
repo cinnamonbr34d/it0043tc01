@@ -1,4 +1,4 @@
-body {
+body{
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     background-color: #f0f0f0;
     display: flex;
@@ -14,13 +14,13 @@ body {
     width: 80%;
     height: 500px;
     border: 2px solid #000;
-    border-radius: 1em;
+    border-radius: 0.3em;
     margin-left: 20px;
     background-color: rgb(255, 255, 255);
     }
+    
     .item1, .item2, .item3 {
     border: 1.5px solid #000;
-    border-radius: 1rem;
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
@@ -28,13 +28,13 @@ body {
     margin: 5px;
     }
         .item1 {
-        background-color: rgb(221, 122, 168);
+        background-color: rgb(233, 168, 198);
         }
         .item2 {
-        background-color: rgb(255, 148, 198);
+        background-color: hsl(53, 64%, 84%);
         }
         .item3 {
-        background-color: rgb(226, 170, 137);
+        background-color: hsl(115, 70%, 78%);
         }
 
     #container {
@@ -82,4 +82,4 @@ body {
     flex-direction: column;
     align-items: center;
     }
-    }
+}
