@@ -1,0 +1,85 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    }
+
+    /*/buttons left side, container right side. yung may numbers/*/
+    #container {
+    display: flex;
+    padding: 5px;
+    width: 80%;
+    height: 500px;
+    border: 2px solid #000;
+    border-radius: 1em;
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+    }
+    .item1, .item2, .item3 {
+    border: 1.5px solid #000;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    }
+        .item1 {
+        background-color: rgb(221, 122, 168);
+        }
+        .item2 {
+        background-color: rgb(255, 148, 198);
+        }
+        .item3 {
+        background-color: rgb(226, 170, 137);
+        }
+
+    #container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        }
+
+    #controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .button-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    button {
+    margin: 3px;
+    padding: 5px;
+    color: white;
+    background-color: #131383;
+    border-radius: 1rem;
+    width: 150px;
+    text-align: center;
+    }
+
+    .grow-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    }
+
+    .grow-section button {
+    width:auto;
+    }
+
+    @media (max-width: 768px) {
+    body {
+    flex-direction: column;
+    align-items: center;
+    }
+    }

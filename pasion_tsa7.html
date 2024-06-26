@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Simulator</title>
+<link rel="stylesheet" href="pasion_tsa7.css">
+</head>
+<body>
+<h1>Flexbox Simulator</h1>
+<div class="grow-section">
+    <button onclick="resetFlexbox()">Reset Flexbox</button>
+    <div>
+
+<div id="controls">
+<div class="button-section">
+<label>Flex Direction<p>
+<button onclick="changeDirection('row')">Row</button>
+<button onclick="changeDirection('column')">Column</button>
+</label><p></p>
+
+<label>Justify Content <p>
+<button onclick="changeDirection('row-reverse')">Row Reverse</button>
+<button onclick="changeDirection('column-reverse')">Column Reverse</button>
+<button onclick="changeDirection('gap')">Gap</button>
+<button onclick="changeDirection('space-between')">Space Between</button>
+<button onclick="changeDirection('space-around')">Space Around</button>
+<button onclick="changeDirection('space-evenly')">Space Evenly</button>
+</label> <p></p></p>
+
+<label>Align Items<p>
+<button onclick="changeDirection('start')">Start</button>
+<button onclick="changeDirection('center')">Center</button>
+<button onclick="changeDirection('end')">End</button>
+</label></p>
+
+
+<label>Flex Grow<p>
+<div class="grow-section">
+    <button onclick="growAll()">Grow All</button>
+</div>
+</div>
+<button onclick="growItem(1)">Grow B-1</button><p></p>
+<input type="number" id="grow-1" value="1" min="0" step="1">
+</div>
+<div>
+<button onclick="growItem(2)">Grow B-2</button>
+<input type="number" id="grow-2" value="1" min="0" step="1">
+</div>
+<div>
+<button onclick="growItem(3)">Grow B-3</button>
+<input type="number" id="grow-3" value="1" min="0" step="1">
+
+</label></p></p>
+</div>
+</div>
+
+
+</div>
+<div id="container">
+<div class="item1">1</div>
+<div class="item2">2</div>
+<div class="item3">3</div>
+</div>
+
+
+<script>
+function changeDirection(direction) {
+const container = document.getElementById('container');
+switch (direction) {
+case 'gap':
+container.style.gap = '10px';
+break;
+case 'start':
+container.style.justifyContent = 'flex-start';
+break;
+case 'center':
+container.style.justifyContent = 'center';
+break;
+case 'end':
+container.style.justifyContent = 'flex-end';
+break;
+case 'space-between':
+container.style.justifyContent = 'space-between';
+break;
+case 'space-around':
+container.style.justifyContent = 'space-around';
+break;
+case 'space-evenly':
+container.style.justifyContent = 'space-evenly';
+break;
+default:
+container.style.flexDirection = direction;
+}
+}
+
+function resetFlexbox() {
+const container = document.getElementById('container');
+container.style.flexDirection = 'row';
+container.style.justifyContent = 'flex-start';
+container.style.gap = '0px';
+document.querySelectorAll('#container > div').forEach(item => {item.style.flexGrow = 0;});
+}
+
+function growAll() {
+document.querySelectorAll('#container > div').forEach(item => {item.style.flexGrow = 1;});
+}
+
+function growItem(index) {
+const value = document.getElementById(`grow-${index}`).value;
+document.querySelector(`.item${index}`).style.flexGrow = value;
+}
+</script>
+</body>
+</html>
