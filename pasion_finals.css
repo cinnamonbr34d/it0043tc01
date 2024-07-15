@@ -569,7 +569,7 @@ body .works {
 }
 
 .jif-img-3 {
-    background: url("Tsa3.gif");
+    background: url("tsa3.gif");
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -579,7 +579,7 @@ body .works {
 }
 
 .jif-img-4 {
-    background: url("Tsa4.gif");
+    background: url("tsa4.gif");
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -589,7 +589,7 @@ body .works {
 }
 
 .jif-img-5 {
-    background: url("Tsa5.gif");
+    background: url("tsa5.gif");
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -599,7 +599,7 @@ body .works {
 }
 
 .jif-img-6 {
-    background: url("Tsa6.gif");
+    background: url("tsa6.gif");
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -609,7 +609,7 @@ body .works {
 }
 
 .jif-img-7 {
-    background: url("Tsa7.gif");
+    background: url("tsa7.gif");
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -863,7 +863,7 @@ form input[type="submit"]:hover {
 }
 
 .info-container .container {
-    max-width: 1200px; /* Increased max-width for better spacing */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -877,8 +877,8 @@ form input[type="submit"]:hover {
 .cards-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Spacing between the cards */
-    flex-wrap: wrap; /* Allow cards to wrap to next line if needed */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
