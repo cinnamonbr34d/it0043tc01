@@ -115,4 +115,9 @@ body{
 }
 .btn:hover.add-pokemon{
     background-color: #e7b8aa;
+    box-shadow: 0 0 15px rgba(253, 130, 30, 0.8); 
+}
+.btn:hover.release-pokemon{
+    background-color: #e7b8aa;
+    box-shadow: 0 0 15px rgba(72, 200, 76, 0.8); 
 }
