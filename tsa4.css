@@ -1,8 +1,8 @@
 body{
     background-image: url("https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest-th.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
