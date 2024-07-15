@@ -293,6 +293,7 @@ li>a:hover {
     transform: scale(1.15);
     transition: 0.3s;
     color: #35262d;
+    box-shadow: 0 0 20px #ff419a;
 }
 
 a {
@@ -818,6 +819,7 @@ input[type=submit]:hover {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
+    margin-top:3rem;
 }
 
 form {
