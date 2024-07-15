@@ -372,7 +372,7 @@ body .about {
     font-size: 20px;
     padding: 0 20px;
     line-height: 2rem;
-    color: #313131;
+    color: #474747;
 }
 
 .image2 {
@@ -391,18 +391,18 @@ body .about {
 }
 
 .show-image {
-    font-size: 20px;
-    color: #692847;
+    font-size: 22px;
+    color: #831d4e;
     cursor: pointer;
 }
 
 .show-image:hover{
     color: #ffffff;
     cursor: pointer;
+    box-shadow: 1 1 80px #1c1818;
 }
 
 /**/
-/* Modal styles */
 .modal {
     display: none;
     position: fixed;
