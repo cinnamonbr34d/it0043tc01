@@ -4,36 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img {
+            max-width: 100px;
+            max-height: 100px;
+            width: auto;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
     <center>
         <form name="">
             <label for="natdex">National Dex:</label>
-            <input type="number"name=""id="natdex"min="1"><br><br>
-            <input type="radio"id="gen1"name="generation"value="1">
+            <input type="number" name="" id="natdex" min="1"><br><br>
+            <input type="radio" id="gen1" name="generation" value="1">
             <label for="gen1">Generation 1</label>
-            <input type="radio"id="gen2"name="generation"value="2">
+            <input type="radio" id="gen2" name="generation" value="2">
             <label for="gen2">Generation 2</label>
-            <input type="radio"id="gen3"name="generation"value="3">
+            <input type="radio" id="gen3" name="generation" value="3">
             <label for="gen3">Generation 3</label>
-            <input type="radio"id="gen4"name="generation"value="4">
+            <input type="radio" id="gen4" name="generation" value="4">
             <label for="gen4">Generation 4</label>
-            <input type="radio"id="gen5"name="generation"value="5">
+            <input type="radio" id="gen5" name="generation" value="5">
             <label for="gen5">Generation 5</label>
-            <input type="radio"id="gen6"name="generation"value="6">
+            <input type="radio" id="gen6" name="generation" value="6">
             <label for="gen6">Generation 6</label>
-            <input type="radio"id="gen7"name="generation"value="7">
+            <input type="radio" id="gen7" name="generation" value="7">
             <label for="gen7">Generation 7</label>
-            <input type="radio"id="gen8"name="generation"value="8">
+            <input type="radio" id="gen8" name="generation" value="8">
             <label for="gen8">Generation 8</label>
-            <input type="radio"id="gen9"name="generation"value="9">
+            <input type="radio" id="gen9" name="generation" value="9">
             <label for="gen9">Generation 9</label><br><br>
             <label for="pokename">Pokemon Name: </label>
-            <input type="text" name=""id="pokename"><br><br>
+            <input type="text" name="" id="pokename"><br><br>
             <label for="filename">Image: </label>
-            <input type="file"id="filename"name="filename"><br><br>
+            <input type="file" id="filename" name="filename"><br><br>
             <label for="t1">Type 1: </label>
-            <input list="t1"name="t1">
+            <input list="t1" name="t1">
             <datalist id="t1">
                 <option value="Normal">
                 <option value="Fire">
@@ -77,354 +94,143 @@
                 <option value="Fairy">
             </datalist><br><br>
             <label for="evolvesfrom">Evolves from: </label>
-            <input type="text"name=""id="evolvesfrom">
+            <input type="text" name="" id="evolvesfrom">
             <label for="evolvesto">Evolves to: </label>
-            <input type="text"id="eto"><br><br>
+            <input type="text" id="eto"><br><br>
             <label for="nickname">Nickname: </label>
-            <input type="text"name=""id="nickname"><br><br>
+            <input type="text" name="" id="nickname"><br><br>
             <label for="birthday">Birthday: </label>
-            <input type="date"name=""id="birthday"><br><br>
+            <input type="date" name="" id="birthday"><br><br>
             <input type="submit"><br><br>
-        </form>  
-        <table border="1px"width="1000px">
+        </form>
+        <table>
             <tr>
-                <th>
-                    National Dex
-                </th>
-                <th>
-                    Generation
-                </th>
-                <th>
-                    Pokemon Name
-                </th>
-                <th>
-                    Image
-                </th>
-                <th>
-                    Type 1
-                </th>
-                <th>
-                    Type 2
-                </th>
-                <th>
-                    Evolves From
-                </th>
-                <th>
-                    Evolves To
-                </th>
-                <th>
-                    Nickname
-                </th>
-                <th>
-                    Birthday
-                </th>
+                <th>National Dex</th>
+                <th>Generation</th>
+                <th>Pokemon Name</th>
+                <th>Image</th>
+                <th>Type 1</th>
+                <th>Type 2</th>
+                <th>Evolves From</th>
+                <th>Evolves To</th>
+                <th>Nickname</th>
+                <th>Birthday</th>
             </tr>
-            <tr align="center">
-                <td>
-                    #0000
-                </td>
-                <td>
-                    Generation Z
-                </td>
-                <td>
-                    Precious Angel Joy Pasion
-                </td>
-                <td>
-                    <img src="preciousp.jpg" alt="Image">
-
-                </td>
-                <td bgcolor="915121">
-                    <font color="white">Ground</font>
-                </td>
-                <td bgcolor="FAC000">
-                    <font color="white">Electric</font>
-                <td>
-                    -
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Presh
-                </td>
-                <td>
-                    08-08-2005
-                </td>
+            <tr>
+                <td>#0000</td>
+                <td>Generation Z</td>
+                <td>Precious Angel Joy Pasion</td>
+                <td><img src="preciousp.jpg" alt="Image"></td>
+                <td bgcolor="915121"><font color="white">Ground</font></td>
+                <td bgcolor="FAC000"><font color="white">Electric</font></td>
+                <td>-</td>
+                <td>-</td>
+                <td>Presh</td>
+                <td>08-08-2005</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0118
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Goldeen
-                </td>
-                <td>
-                    <img src="https://archives.bulbagarden.net/media/upload/thumb/b/b6/0118Goldeen.png/250px-0118Goldeen.png" width="100" height="100" alt="Goldeen">
-                </td>
-                <td bgcolor="2980EF" colspan="2">
-                    <font color="white">Water</font>
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Seaking
-                </td>
-                <td>
-                    Bulba
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0118</td>
+                <td>Generation 1</td>
+                <td>Goldeen</td>
+                <td><img src="https://archives.bulbagarden.net/media/upload/thumb/b/b6/0118Goldeen.png/250px-0118Goldeen.png" alt="Goldeen"></td>
+                <td bgcolor="2980EF" colspan="2"><font color="white">Water</font></td>
+                <td>-</td>
+                <td>Seaking</td>
+                <td>Bulba</td>
+                <td>01-01-2024</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0002
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Ivysaur
-                </td>
-                <td>
-                    <img src="Ivysaur.png" alt="Ivysaur">
-                </td>
-                <td bgcolor="3FA129">
-                    <font color="white">Grass</font>
-                </td>
-                <td bgcolor="9141CB">
-                    <font color="white">Poison</font>
-                </td>
-                <td>
-                    Goldeen
-                </td>
-                <td>
-                    Venusaur
-                </td>
-                <td>
-                    Ivy
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0002</td>
+                <td>Generation 1</td>
+                <td>Ivysaur</td>
+                <td><img src="Ivysaur.png" alt="Ivysaur"></td>
+                <td bgcolor="3FA129"><font color="white">Grass</font></td>
+                <td bgcolor="9141CB"><font color="white">Poison</font></td>
+                <td>Goldeen</td>
+                <td>Venusaur</td>
+                <td>Ivy</td>
+                <td>01-01-2024</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0003
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Dewgong
-                </td>
-                <td>
-                    <img src="Dewgong.png" alt="Dewgong">
-                </td>
-                <td bgcolor="2980EF">
-                    <font color="white">Water</font>
-                </td>
-                <td bgcolor="3DCEF3">
-                    <font color="white">Ice</font>
-                </td>
-                <td>
-                    Seel
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Venu
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0003</td>
+                <td>Generation 1</td>
+                <td>Dewgong</td>
+                <td><img src="Dewgong.png" alt="Dewgong"></td>
+                <td bgcolor="2980EF"><font color="white">Water</font></td>
+                <td bgcolor="3DCEF3"><font color="white">Ice</font></td>
+                <td>Seel</td>
+                <td>-</td>
+                <td>Venu</td>
+                <td>01-01-2024</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0004
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Charmander
-                </td>
-                <td>
-                    <img src="https://archives.bulbagarden.net/media/upload/2/27/0004Charmander.png"width="100" height="100" alt="Charmander">
-                </td>
-                <td bgcolor="E62829" colspan="2">
-                    <font color="white">Fire</font>
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Charmeleon
-                </td>
-                <td>
-                    Mander
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0004</td>
+                <td>Generation 1</td>
+                <td>Charmander</td>
+                <td><img src="https://archives.bulbagarden.net/media/upload/2/27/0004Charmander.png" alt="Charmander"></td>
+                <td bgcolor="E62829" colspan="2"><font color="white">Fire</font></td>
+                <td>-</td>
+                <td>Charmeleon</td>
+                <td>Mander</td>
+                <td>01-01-2024</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0005
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Charmeleon
-                </td>
-                <td>
-                    <img src="https://archives.bulbagarden.net/media/upload/0/05/0005Charmeleon.png"width="100" height="100" alt="Charmeleon">
-                </td>
-                <td bgcolor="E62829" colspan="2">
-                    <font color="white">Fire</font>
-                </td>
-                <td>
-                    Charmander
-                </td>
-                <td>
-                    Charizard
-                </td>
-                <td>
-                    Meleon
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0005</td>
+                <td>Generation 1</td>
+                <td>Charmeleon</td>
+                <td><img src="https://archives.bulbagarden.net/media/upload/0/05/0005Charmeleon.png" alt="Charmeleon"></td>
+                <td bgcolor="E62829" colspan="2"><font color="white">Fire</font></td>
+                <td>Charmander</td>
+                <td>Charizard</td>
+                <td>Meleon</td>
+                <td>01-01-2024</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0006
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Charizard
-                </td>
-                <td>
-                    <img src="https://archives.bulbagarden.net/media/upload/thumb/3/35/0006Charizard-Mega_X.png/110px-0006Charizard-Mega_X.png"width="100" height="100" alt="Charizard">
-                </td>
-                <td bgcolor="E62829">
-                    <font color="white">Fire</font>
-                </td>
-                <td bgcolor="81B9EF">
-                    <font color="white">Flying</font>
-                </td>
-                <td>
-                    Charmeleon
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Rizard
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0006</td>
+                <td>Generation 1</td>
+                <td>Charizard</td>
+                <td><img src="https://archives.bulbagarden.net/media/upload/thumb/3/35/0006Charizard-Mega_X.png/110px-0006Charizard-Mega_X.png" alt="Charizard"></td>
+                <td bgcolor="E62829"><font color="white">Fire</font></td>
+                <td bgcolor="81B9EF"><font color="white">Flying</font></td>
+                <td>Charmeleon</td>
+                <td>-</td>
+                <td>Rizard</td>
+                <td>01-01-2024</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0007
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Squirtle
-                </td>
-                <td>
-                    <img src="squirtle.png" alt="Squirtle">
-                </td>
-                <td bgcolor="2980EF" colspan="2">
-                    <font color="white">Water</font>
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Wartortle
-                </td>
-                <td>
-                    Squir
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0007</td>
+                <td>Generation 1</td>
+                <td>Squirtle</td>
+                <td><img src="squirtle.png" alt="Squirtle"></td>
+                <td bgcolor="2980EF" colspan="2"><font color="white">Water</font></td>
+                <td>-</td>
+                <td>Wartortle</td>
+                <td>Squir</td>
+                <td>01-01-2024</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0008
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Wartortle
-                </td>
-                <td>
-                    <img src="Wartortle.png" alt="Wartortle">
-                </td>
-                <td bgcolor="2980EF" colspan="2">
-                    <font color="white">Water</font>
-                </td>
-                <td>
-                    Squirtle
-                </td>
-                <td>
-                    Blastoise
-                </td>
-                <td>
-                    Warto
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0008</td>
+                <td>Generation 1</td>
+                <td>Wartortle</td>
+                <td><img src="Wartortle.png" alt="Wartortle"></td>
+                <td bgcolor="2980EF" colspan="2"><font color="white">Water</font></td>
+                <td>Squirtle</td>
+                <td>Blastoise</td>
+                <td>Warto</td>
+                <td>01-01-2024</td>
             </tr>
-            <tr align="center">
-                <td>
-                    #0009
-                </td>
-                <td>
-                    Generation 1
-                </td>
-                <td>
-                    Blastoise
-                </td>
-                <td>
-                    <img
-                        src="https://archives.bulbagarden.net/media/upload/0/0a/0009Blastoise.png" width="100" height="100" alt="Blastoise">
-                </td>
-                <td bgcolor="2980EF" colspan="2">
-                    <font color="white">Water</font>
-                </td>
-                <td>
-                    Wartortle
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Blast
-                </td>
-                <td>
-                    01-01-2024
-                </td>
+            <tr>
+                <td>#0009</td>
+                <td>Generation 1</td>
+                <td>Blastoise</td>
+                <td><img src="https://archives.bulbagarden.net/media/upload/0/0a/0009Blastoise.png" alt="Blastoise"></td>
+                <td bgcolor="2980EF" colspan="2"><font color="white">Water</font></td>
+                <td>Wartortle</td>
+                <td>-</td>
+                <td>Blast</td>
+                <td>01-01-2024</td>
             </tr>
         </table>
-</body>
-</html>
     </center>
 </body>
 </html>
