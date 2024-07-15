@@ -290,10 +290,10 @@ li>a:hover {
 }
 
 .circle-button:hover {
-    transform: scale(1.15);
+    transform: scale(1.20);
     transition: 0.3s;
-    color: #35262d;
-    box-shadow: 0 0 20px #ff419a;
+    color: #4a313d;
+    box-shadow: 5 5 50px #ff1c73;
 }
 
 a {
@@ -1092,4 +1092,3 @@ footer {
         padding-top: 15px;
     }
 }
-
